@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Carrier = require('../models/Carrier');
+const Carrier = require('../models/Carriers');
 const { google } = require('googleapis');
 const credentials = require('../key.json');
 
