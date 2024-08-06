@@ -81,7 +81,7 @@ router.get('/fetch-sheets-data', async (req, res) => {
 // Fetch paginated carrier data with filters
 router.get('/data', async (req, res) => {
   try {
-    const { page = 1, limit = 100, filters = '{}' } = req.query;
+    const { page = 1, limit = 100000, filters = '{}' } = req.query;
     const parsedFilters = JSON.parse(filters);
 
     let query = {};
